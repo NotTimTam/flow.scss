@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/NotTimTam/flow.scss/issues"
   },
-  "homepage": "https://github.com/NotTimTam/flow.scss#readme"
+  "homepage": "https://github.com/NotTimTam/flow.scss#readme",
+  "dependencies": {
+    "sass": "^1.58.0"
+  }
 }

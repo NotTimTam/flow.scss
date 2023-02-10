@@ -1,0 +1,20 @@
+/*
+Imports
+*/
+@use "../mixins.scss" as *;
+@use "../vars.scss" as *;
+
+/*
+Box
+*/
+.margin {
+	margin: $margin;
+}
+
+.padding {
+	padding: $padding;
+}
+
+.gap {
+	gap: $gap;
+}

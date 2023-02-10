@@ -10,6 +10,8 @@ $acronym: "Flexible Layout Optimization With SCSS";
 
 `flow.scss` is built for **customization**. A single `vars.scss` file contains every variable used to build the styles. It is recommended to modify this file to match your website's design, but it already includes all the necessary base values to create stunning websites.
 
+-   To take advantage of this feature. Download the entire `flow.scss` library directly into your project's `styles` folder or fork the repository.
+
 `flow.scss` is designed to integrate **seamlessly** into your existing projects, without causing any style conflicts or the need for debugging.
 
 ## Examples
@@ -26,6 +28,17 @@ export default function Home({ Component, pageProps }) {
 			</article>
 		</main>
 	);
+}
+```
+
+```scss
+// Incorporate into your own SCSS files directly for access to mixins and variables.
+@use "flow.scss" as *;
+
+main.page {
+	@include flex-column;
+	gap: $gap;
+	padding: $padding * 2 $padding;
 }
 ```
 

@@ -1,8 +1,8 @@
 /*
 Imports
 */
-@use "./mixins.scss" as *;
-@use "./vars.scss" as *;
+@use "../mixins.scss" as *;
+@use "../vars.scss" as *;
 
 /*
 Flexbox
@@ -79,19 +79,4 @@ Flexbox
 
 .shrink {
 	flex-shrink: 2;
-}
-
-/*
-Box
-*/
-.margin {
-	margin: $margin;
-}
-
-.padding {
-	padding: $padding;
-}
-
-.gap {
-	gap: $gap;
 }
