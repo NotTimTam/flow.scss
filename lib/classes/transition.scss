@@ -1,0 +1,52 @@
+/*
+Imports
+*/
+@use "../mixins.scss" as *;
+@use "../vars.scss" as *;
+
+// Transition structure.
+.transition,
+.t {
+	@include transition;
+
+	// Speed/duration changes.
+	.slow,
+	.s {
+		transition-duration: $transition-speed-slow; // 0.3s
+	}
+	.fast,
+	.f {
+		transition-duration: $transition-speed-fast; // 0.1s
+	}
+
+	// Transitions with different properties.
+	.transition-property-all,
+	.transition-all,
+	.all {
+		transition-property: $transition-property-all; // Transition applies to every attribute.
+	}
+
+	.transition-property-rect,
+	.transition-rect,
+	.rect {
+		transition-property: $transition-property-rect; // Transition applies to top, right, bottom, left, max-width, max-height, min-width, min-height, width, and height values.
+	}
+
+	.transition-property-transform,
+	.transition-transform,
+	.transform {
+		transition-property: $transition-property-transform; // Transition applies to transform and z-index.
+	}
+
+	.transition-property-box,
+	.transition-box,
+	.box {
+		transition-property: $transition-property-box; // Transition applies to margin, padding, gap, and border.
+	}
+
+	.transition-property-colors,
+	.transition-colors,
+	.colors {
+		transition-property: $transition-property-colors; // Transition applies to background and color.
+	}
+}

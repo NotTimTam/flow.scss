@@ -14,3 +14,14 @@ Flexbox
 	display: flex;
 	flex-direction: row;
 }
+
+/*
+Transitions and Animations
+*/
+@mixin transition(
+	$property: $transition-property-all,
+	$speed: $transition-speed,
+	$timing: ease-in-out
+) {
+	transition: $property $speed $timing;
+}

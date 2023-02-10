@@ -4,3 +4,20 @@ Box
 $margin: 1.5rem;
 $padding: 1rem;
 $gap: 0.5rem;
+
+/*
+Transitions and Animation
+*/
+
+// Transitions with different properties.
+$transition-property-all: all;
+$transition-property-rect: width, height, left, right, top, bottom, min-width,
+	min-height, max-width, max-height;
+$transition-property-transform: transform, z-index;
+$transition-property-box: margin, padding, gap, border;
+$transition-property-colors: color, background;
+
+// Transitions at different speeds.
+$transition-speed: 0.15s;
+$transition-speed-slow: 0.3s;
+$transition-speed-fast: 0.1s;
