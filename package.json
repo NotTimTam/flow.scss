@@ -1,0 +1,25 @@
+{
+  "name": "flow.scss",
+  "version": "1.0.0",
+  "description": "A simple, yet effective SCSS framework for your front-end design needs.",
+  "main": "index.scss",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NotTimTam/flow.scss.git"
+  },
+  "keywords": [
+    "scss"
+  ],
+  "author": "NotTimTam",
+  "license": "SEE LICENSE IN LICENSE FILE",
+  "bugs": {
+    "url": "https://github.com/NotTimTam/flow.scss/issues"
+  },
+  "homepage": "https://github.com/NotTimTam/flow.scss#readme"
+}

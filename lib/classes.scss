@@ -1,0 +1,97 @@
+/*
+Imports
+*/
+@use "./mixins.scss" as *;
+@use "./vars.scss" as *;
+
+/*
+Flexbox
+*/
+.flex,
+.flex-column,
+.column {
+	@include flex-column;
+}
+
+.flex-row,
+.row {
+	@include flex-row;
+}
+
+.justify-content-start,
+.justify-start {
+	justify-content: flex-start;
+}
+
+.justify-content-end,
+.justify-end {
+	justify-content: flex-end;
+}
+
+.justify-content-center,
+.justify-center {
+	justify-content: center;
+}
+
+.justify-content-baseline,
+.justify-baseline {
+	justify-content: baseline;
+}
+
+.justify-content-between,
+.justify-between {
+	justify-content: space-between;
+}
+
+.justify-content-around,
+.justify-around {
+	justify-content: space-around;
+}
+
+.justify-content-evenly,
+.justify-evenly {
+	justify-content: space-evenly;
+}
+
+.align-content-start,
+.align-start {
+	align-items: flex-start;
+}
+
+.align-content-end,
+.align-end {
+	align-items: flex-end;
+}
+
+.align-content-center,
+.align-center {
+	align-items: center;
+}
+
+.align-content-baseline,
+.align-baseline {
+	align-items: baseline;
+}
+
+.grow {
+	flex-grow: 2;
+}
+
+.shrink {
+	flex-shrink: 2;
+}
+
+/*
+Box
+*/
+.margin {
+	margin: $margin;
+}
+
+.padding {
+	padding: $padding;
+}
+
+.gap {
+	gap: $gap;
+}
