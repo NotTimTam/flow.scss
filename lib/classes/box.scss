@@ -12,6 +12,12 @@ Box
 .margin {
 	margin: $margin;
 }
+.margin-05 {
+	margin: $margin / 2;
+}
+.margin-025 {
+	margin: $margin / 4;
+}
 .margin-top,
 .margin-t,
 .margin-up,
@@ -37,6 +43,12 @@ Box
 .padding {
 	padding: $padding;
 }
+.padding-05 {
+	padding: $padding / 2;
+}
+.padding-025 {
+	padding: $padding / 4;
+}
 .padding-top,
 .padding-t,
 .padding-up,
@@ -61,4 +73,10 @@ Box
 // Gap
 .gap {
 	gap: $gap;
+}
+.gap-05 {
+	gap: $gap / 2;
+}
+.gap-025 {
+	gap: $gap / 4;
 }

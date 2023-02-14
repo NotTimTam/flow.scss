@@ -254,30 +254,31 @@ form {
 	button {
 		align-self: flex-end;
 	}
+}
+input,
+label,
+select,
+textarea,
+button,
+datalist,
+output,
+option,
+optgroup {
+	@include transition(border, $transition-speed-fast, ease-in-out);
 
-	input,
-	label,
-	select,
-	textarea,
-	button,
-	datalist,
-	output,
-	option,
-	optgroup {
-		@include transition(border, $transition-speed-fast, ease-in-out);
+	font-size: 16px;
 
-		&[disabled] {
-			pointer-events: none;
-			// opacity: 0.9;
-		}
+	&[disabled] {
+		pointer-events: none;
+		// opacity: 0.9;
+	}
 
-		background: var(--body-bg);
-		color: var(--body-color);
+	background: var(--body-bg);
+	color: var(--body-color);
 
-		&:focus,
-		&:active {
-			border-color: $outline-color;
-		}
+	&:focus,
+	&:active {
+		border-color: $outline-color;
 	}
 }
 
@@ -291,6 +292,8 @@ button {
 	align-items: center;
 	justify-content: center;
 	gap: $gap / 2;
+
+	font-size: 16px;
 
 	font-weight: 600;
 
