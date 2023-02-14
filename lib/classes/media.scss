@@ -1,0 +1,129 @@
+/*
+Imports
+*/
+@use "../mixins.scss" as *;
+@use "../vars.scss" as *;
+
+/*
+Breakpoints and Dimensional Interaction
+*/
+
+// Fill
+.fill-width,
+.fill {
+	width: 100%;
+}
+
+// Maximum Widths
+.max-width-mobile-s,
+.max-mobile-s {
+	max-width: $mobile-s;
+}
+.max-width-mobile-m,
+.max-mobile-m {
+	max-width: $mobile-m;
+}
+.max-width-mobile-l,
+.max-mobile-l {
+	max-width: $mobile-l;
+}
+.max-width-mobile,
+.max-mobile {
+	max-width: $mobile;
+}
+.max-width-tablet,
+.max-tablet {
+	max-width: $tablet;
+}
+.max-width-laptop,
+.max-laptop {
+	max-width: $laptop;
+}
+.max-width-laptop-l,
+.max-laptop-l {
+	max-width: $laptop-l;
+}
+.max-width-desktop,
+.max-desktop {
+	max-width: $desktop;
+}
+.max-width-ultra-4k,
+.max-ultra-4k {
+	max-width: $ultra-4k;
+}
+
+// Minimum Widths
+.min-width-mobile-s,
+.min-mobile-s {
+	min-width: $mobile-s;
+}
+.min-width-mobile-m,
+.min-mobile-m {
+	min-width: $mobile-m;
+}
+.min-width-mobile-l,
+.min-mobile-l {
+	min-width: $mobile-l;
+}
+.min-width-mobile,
+.min-mobile {
+	min-width: $mobile;
+}
+.min-width-tablet,
+.min-tablet {
+	min-width: $tablet;
+}
+.min-width-laptop,
+.min-laptop {
+	min-width: $laptop;
+}
+.min-width-laptop-l,
+.min-laptop-l {
+	min-width: $laptop-l;
+}
+.min-width-desktop,
+.min-desktop {
+	min-width: $desktop;
+}
+.min-width-ultra-4k,
+.min-ultra-4k {
+	min-width: $ultra-4k;
+}
+
+// Default Widths
+.width-mobile-s,
+.mobile-s {
+	width: $mobile-s;
+}
+.width-mobile-m,
+.mobile-m {
+	width: $mobile-m;
+}
+.width-mobile-l,
+.mobile-l {
+	width: $mobile-l;
+}
+.width-mobile,
+.mobile {
+	width: $mobile;
+}
+.width-tablet,
+.tablet {
+	width: $tablet;
+}
+.width-laptop,
+.laptop {
+	width: $laptop;
+}
+.width-laptop-l,
+.laptop-l {
+	width: $laptop-l;
+}
+.width-desktop,
+.desktop {
+	width: $desktop;
+}
+.width-ultra-4k,
+.ultra-4k {
+	width: $ultra-4k;
+}

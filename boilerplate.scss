@@ -374,7 +374,19 @@ progress {
 
 // Figcaption
 figure {
+	@include flex-column;
+
 	border: $border;
+	border-radius: $border-radius;
+
+	overflow: hidden;
+
+	max-width: $tablet;
+	margin: 0 auto;
+
+	img {
+		width: 100%;
+	}
 
 	figcaption {
 		background-color: var(--body-color);
