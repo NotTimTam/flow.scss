@@ -21,7 +21,46 @@ Transitions and Animations
 @mixin transition(
 	$property: $transition-property-all,
 	$speed: $transition-speed,
-	$timing: ease-in-out
+	$timing: ease
 ) {
 	transition: $property $speed $timing;
+}
+
+/*
+Content
+*/
+@mixin header {
+	&:is(h1) {
+		font-size: 40px;
+		font-weight: 700;
+
+		@media (max-width: $mobile-l) {
+			font-size: 32px;
+		}
+	}
+
+	&:is(h2) {
+		font-size: 24px;
+		font-weight: 600;
+	}
+
+	&:is(h3) {
+		font-size: 18.72px;
+		font-weight: 500;
+	}
+
+	&:is(h4),
+	&:is(h5),
+	&:is(h6) {
+		font-size: 16px;
+		font-weight: 500;
+	}
+
+	&:is(h5) {
+		opacity: 0.95;
+	}
+
+	&:is(h6) {
+		opacity: 0.75;
+	}
 }

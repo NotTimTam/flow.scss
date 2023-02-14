@@ -12,16 +12,24 @@ Box
 .margin {
 	margin: $margin;
 }
-.margin-top {
+.margin-top,
+.margin-t,
+.margin-up,
+.margin-u {
 	margin-top: $margin;
 }
-.margin-right {
+.margin-right,
+.margin-r {
 	margin-right: $margin;
 }
-.margin-bottom {
+.margin-bottom,
+.margin-b,
+.margin-down,
+.margin-d {
 	margin-bottom: $margin;
 }
-.margin-left {
+.margin-left,
+.margin-l {
 	margin-left: $margin;
 }
 
@@ -29,16 +37,24 @@ Box
 .padding {
 	padding: $padding;
 }
-.padding-top {
+.padding-top,
+.padding-t,
+.padding-up,
+.padding-u {
 	padding-top: $padding;
 }
-.padding-right {
+.padding-right,
+.padding-r {
 	padding-right: $padding;
 }
-.padding-bottom {
+.padding-bottom,
+.padding-b,
+.padding-down,
+.padding-d {
 	padding-bottom: $padding;
 }
-.padding-left {
+.padding-left,
+.padding-l {
 	padding-left: $padding;
 }
 

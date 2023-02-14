@@ -7,7 +7,7 @@ Imports
 // Transition structure.
 .transition,
 .t {
-	@include transition;
+	@include transition; // Initial generic transition function.
 
 	// Speed/duration changes.
 	.slow,
@@ -48,5 +48,67 @@ Imports
 	.transition-colors,
 	.colors {
 		transition-property: $transition-property-colors; // Transition applies to background and color.
+	}
+
+	// Transition timing functions.
+	.ease,
+	.e {
+		transition-timing-function: ease;
+	}
+
+	.ease-in,
+	.e-i,
+	.ei {
+		transition-timing-function: ease-in;
+	}
+
+	.ease-out,
+	.e-o,
+	.eo {
+		transition-timing-function: ease-out;
+	}
+
+	.ease-in-out,
+	.e-i-o,
+	.eio {
+		transition-timing-function: ease-in-out;
+	}
+
+	.linear,
+	.l {
+		transition-timing-function: linear;
+	}
+
+	.step-start,
+	.s-s,
+	.ss {
+		transition-timing-function: step-start;
+	}
+
+	.step-end,
+	.s-e,
+	.se {
+		transition-timing-function: step-end;
+	}
+
+	.jump-start,
+	.start,
+	.j-s,
+	.js {
+		transition-timing-function: jump-start;
+	}
+
+	.jump-end,
+	.end,
+	.j-e,
+	.je {
+		transition-timing-function: jump-end;
+	}
+
+	.jump-none,
+	.none,
+	.j-n,
+	.jn {
+		transition-timing-function: jump-none;
 	}
 }

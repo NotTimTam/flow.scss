@@ -1,0 +1,41 @@
+/*-----------------------------------------------
+# reset.scss
+Used to prepare websites for styling without unnecessary browser restyling.
+
+This file does not completely overwrite browser styling, just the main stuff that frusturates most people.
+-----------------------------------------------*/
+
+// Better intial box settings.
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+	padding: 0;
+	margin: 0;
+	background: none;
+}
+
+// Add pointer cursor back to interactive elements.
+a,
+button,
+input[type="submit"],
+input[type="button"] {
+	cursor: pointer;
+}
+
+// Don't allow images to grow outside of their container.
+img {
+	max-inline-size: 100%;
+	max-block-size: 100%;
+}
+
+// Don't allow users to select or drag specific items.
+form {
+	label,
+	legend {
+		user-select: none;
+		-webkit-user-drag: none;
+	}
+}

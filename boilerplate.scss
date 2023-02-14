@@ -1,0 +1,416 @@
+/*-----------------------------------------------
+# boilerplate.scss
+A very light style library that makes elements more responsive and user friendly.
+-----------------------------------------------*/
+
+/*
+Imports
+*/
+@use "./index.scss" as *;
+@import "./reset.scss"; // Basic reset file.
+
+/* Light mode */
+:root {
+	--body-bg: #ffffff;
+	--body-color: #000000;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--body-bg: #000000;
+		--body-color: #ffffff;
+	}
+}
+
+/*
+Variables
+These variables aren't global because they are opt-in only.
+*/
+$border-radius: 3px;
+$border-width: 1px;
+$border: $border-width solid var(--body-color);
+$outline-color: dodgerblue;
+
+/*
+Overwrite every element.
+*/
+*,
+*::before,
+*::after {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-tap-highlight-color: transparent;
+	scroll-behavior: smooth;
+}
+
+/*
+Structural Elements
+*/
+html,
+body {
+	width: 100vw;
+	height: 100vh;
+
+	background-color: var(--body-bg);
+
+	overflow-x: hidden;
+
+	color: var(--body-color);
+}
+
+header,
+footer {
+	@include flex-column;
+	gap: $gap / 2;
+
+	ul,
+	ol {
+		@include flex-row;
+		gap: $gap;
+		flex-wrap: wrap;
+
+		list-style: none !important;
+		margin: 0 !important;
+
+		li {
+			padding: 0 !important;
+		}
+	}
+}
+
+section {
+	@include flex-column;
+	gap: $gap;
+}
+
+article {
+	@include flex-column;
+	gap: $gap;
+
+	padding: $padding;
+}
+
+/*
+Content Elements
+*/
+
+// Headers
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@include header;
+}
+
+// Breaking Up Content
+hr {
+	width: 100%;
+	height: 1px;
+
+	margin: $gap 0;
+
+	background-color: var(--body-color);
+}
+
+// Lists
+ul,
+ol,
+dl {
+	@include flex-column;
+	gap: $gap / 4;
+	list-style: auto;
+
+	&:not(dl) {
+		margin-left: $margin;
+	}
+
+	list-style-position: inside;
+
+	li {
+		padding-left: $gap;
+	}
+
+	dt {
+		font-weight: 600;
+	}
+
+	dd {
+		margin-left: $margin;
+	}
+
+	> ul {
+		list-style: circle;
+	}
+
+	> ol {
+		list-style: lower-latin;
+	}
+
+	&:is(ul) {
+		list-style: disc;
+	}
+	&:is(ol) {
+		list-style: decimal;
+	}
+}
+
+// Navigation
+nav {
+	@include flex-row;
+	gap: $gap / 2;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+
+	ul,
+	ol,
+	dl,
+	div,
+	section {
+		margin: 0;
+		list-style: none;
+		width: 100%;
+		@include flex-row;
+		gap: $gap / 2;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+	}
+}
+
+// Forms and Their Content
+form {
+	@include flex-column;
+	gap: $gap;
+
+	width: 100%;
+	max-width: $tablet;
+	margin: 0 auto;
+
+	div,
+	section {
+		@include flex-column;
+	}
+
+	fieldset {
+		@include flex-column;
+		gap: $gap;
+		padding: $padding;
+
+		border-radius: $border-radius;
+
+		border: $border;
+	}
+
+	legend {
+		font-weight: 600;
+		padding: $gap;
+		border-radius: $border-radius;
+		border: $border;
+	}
+
+	label {
+		font-weight: 600;
+		display: block;
+		margin-bottom: $gap / 2;
+
+		&[for] {
+			cursor: pointer;
+		}
+	}
+
+	ul,
+	ol {
+		list-style: none;
+		margin: 0;
+
+		li {
+			padding: 0;
+		}
+	}
+
+	input:not([type="submit"], [type="button"]),
+	textarea,
+	select {
+		padding: $gap;
+		border: $border;
+		border-radius: $border-radius;
+	}
+
+	select {
+		width: max-content;
+	}
+
+	textarea {
+		height: 6em;
+		width: 100%;
+		resize: vertical;
+	}
+
+	input[type="submit"],
+	input[type="button"],
+	button {
+		align-self: flex-end;
+	}
+
+	input,
+	label,
+	select,
+	textarea,
+	button,
+	datalist,
+	output,
+	option,
+	optgroup {
+		@include transition(border, $transition-speed-fast, ease-in-out);
+
+		&[disabled] {
+			pointer-events: none;
+			// opacity: 0.9;
+		}
+
+		background: var(--body-bg);
+		color: var(--body-color);
+
+		&:focus,
+		&:active {
+			border-color: $outline-color;
+		}
+	}
+}
+
+// Buttons
+input[type="submit"],
+input[type="button"],
+button {
+	@include transition(all, $transition-speed-fast, ease-in-out);
+
+	@include flex-row;
+	align-items: center;
+	justify-content: center;
+	gap: $gap / 2;
+
+	font-weight: 600;
+
+	padding: $padding / 2 $padding;
+
+	width: max-content;
+
+	color: var(--body-bg);
+	background-color: var(--body-color);
+
+	border: $border;
+	border-radius: $border-radius;
+
+	&:hover {
+		transform: translateY(-$padding / 8);
+		border-color: $outline-color;
+	}
+
+	&:active {
+		transform: translateY(0);
+	}
+}
+
+// Blockquote
+blockquote {
+	border-left: $border;
+	border-width: $border-width * 3;
+	padding-left: $margin;
+
+	cite {
+		font-style: italic;
+	}
+}
+
+// Code
+code {
+	background-color: #eee;
+	color: black;
+	border-radius: $border-radius;
+
+	font-family: "Courier New", Courier, monospace;
+
+	padding: $gap;
+
+	> pre {
+		overflow: visible;
+	}
+
+	* {
+		font-family: inherit;
+	}
+}
+code,
+pre {
+	font-family: "Courier New", Courier, monospace;
+
+	width: max-content;
+	max-width: 100%;
+
+	overflow-x: scroll;
+}
+
+// Inline Code
+p code {
+	display: inline-block;
+	padding: $gap;
+}
+
+// Progress Element
+progress {
+	border-radius: $border-radius;
+	overflow: hidden;
+
+	&[value] {
+		::-webkit-progress-bar {
+			border-top-right-radius: $border-radius;
+			border-bottom-right-radius: $border-radius;
+		}
+	}
+}
+
+// Figcaption
+figure {
+	border: $border;
+
+	figcaption {
+		background-color: var(--body-color);
+		color: var(--body-bg);
+
+		padding: $gap / 2;
+
+		font-weight: 600;
+
+		width: 100%;
+		text-align: center;
+	}
+}
+
+// Tables
+table {
+	border-collapse: collapse;
+	border: $border;
+
+	th,
+	td {
+		border: $border;
+		padding: $gap / 2;
+	}
+
+	tbody {
+		tr:nth-child(odd) {
+			background-color: var(--body-color);
+			color: var(--body-bg);
+
+			border-color: var(--body-bg);
+
+			th,
+			td {
+				border-color: var(--body-bg);
+			}
+		}
+	}
+}

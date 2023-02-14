@@ -14,10 +14,20 @@ $acronym: "Flexible Layout Optimization With SCSS";
 
 `flow.scss` is designed to integrate **seamlessly** into your existing projects, without causing any style conflicts or the need for debugging.
 
+## More Info
+
+### Missing Features?
+
+**The goal** of this library is to be comprehensive and take as much of the heavy lifting off of front-end designers as possible. If there are features that don't work as expected, or are missing altogether, please [create a new issue](https://github.com/NotTimTam/flow.scss/issues) to let me know.
+
+### Want to Help Out?
+
+High-quality, documented **pull requests** are welcome. Please note that the code in this repository is under a [CC0 1.0 Universal](https://github.com/NotTimTam/flow.scss/blob/main/LICENSE) license.
+
 ## Examples
 
 ```jsx
-// React.js and Next.js
+// Next.js
 import "flow.scss";
 
 export default function Home({ Component, pageProps }) {
