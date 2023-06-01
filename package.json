@@ -1,7 +1,7 @@
 {
   "name": "flow.scss",
-  "version": "1.0.1",
-  "description": "A simple, yet effective SCSS framework for your front-end design needs.",
+  "version": "1.0.2",
+  "description": "Tiny SCSS framework for flexbox based layout structuring.",
   "main": "index.scss",
   "directories": {
     "lib": "lib"
