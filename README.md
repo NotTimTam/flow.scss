@@ -3,7 +3,7 @@
 ```scss
 $acronym: "Flexible Layout Optimization With SCSS";
 ```
-[Documentation! 🎉](https://github.com/NotTimTam/flow.scss/wiki)
+Read the [documentation! 🎉](https://github.com/NotTimTam/flow.scss/wiki)
 
 `flow.scss` is a **simple**, yet effective SCSS framework for your front-end design needs. It provides a quick and efficient way to generate layouts for your website.
 
