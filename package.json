@@ -1,6 +1,6 @@
 {
   "name": "flow.scss",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple, yet effective SCSS framework for your front-end design needs.",
   "main": "index.scss",
   "directories": {
@@ -14,10 +14,16 @@
     "url": "git+https://github.com/NotTimTam/flow.scss.git"
   },
   "keywords": [
-    "scss"
+    "scss",
+    "sass",
+    "css",
+    "mobile-first",
+    "front-end", 
+    "framework",
+    "web"
   ],
   "author": "NotTimTam",
-  "license": "SEE LICENSE IN LICENSE FILE",
+  "license": "CC0 1.0",
   "bugs": {
     "url": "https://github.com/NotTimTam/flow.scss/issues"
   },
