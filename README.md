@@ -3,8 +3,7 @@
 ```scss
 $acronym: "Flexible Layout Optimization With SCSS";
 ```
-
-**`flow.scss` is still in early development and does not have good [documentation](https://github.com/NotTimTam/flow.scss/wiki) yet.**
+[Documentation! 🎉](https://github.com/NotTimTam/flow.scss/wiki)
 
 `flow.scss` is a **simple**, yet effective SCSS framework for your front-end design needs. It provides a quick and efficient way to generate layouts for your website.
 
@@ -16,13 +15,13 @@ $acronym: "Flexible Layout Optimization With SCSS";
 
 `flow.scss` is designed to integrate **seamlessly** into your existing projects, without causing any style conflicts or the need for debugging.
 
-## More Info
+## More info
 
-### Missing Features?
+### Missing features?
 
 **The goal** of this library is to be comprehensive and take as much of the heavy lifting off of front-end designers as possible. If there are features that don't work as expected, or are missing altogether, please [create a new issue](https://github.com/NotTimTam/flow.scss/issues) to let me know.
 
-### Want to Help Out?
+### Want to help out?
 
 High-quality, documented **pull requests** are welcome. Please note that the code in this repository is under a [CC0 1.0 Universal](https://github.com/NotTimTam/flow.scss/blob/main/LICENSE) license.
 
