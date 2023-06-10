@@ -308,7 +308,7 @@ button {
 	border-radius: $border-radius;
 
 	&:hover {
-		transform: translateY(calc(-$padding / 8));
+		transform: translateY(calc(-#{$padding} / 8));
 		border-color: $outline-color;
 	}
 
