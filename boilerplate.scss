@@ -63,7 +63,7 @@ body {
 header,
 footer {
 	@include flex-column;
-	gap: $gap / 2;
+	gap: calc($gap / 2);
 
 	ul,
 	ol {
@@ -121,7 +121,7 @@ ul,
 ol,
 dl {
 	@include flex-column;
-	gap: $gap / 4;
+	gap: calc($gap / 4);
 	list-style: auto;
 
 	&:not(dl) {
@@ -161,7 +161,7 @@ dl {
 // Navigation
 nav {
 	@include flex-row;
-	gap: $gap / 2;
+	gap: calc($gap / 2);
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 
@@ -214,7 +214,7 @@ form {
 	label {
 		font-weight: 600;
 		display: block;
-		margin-bottom: $gap / 2;
+		margin-bottom: calc($gap / 2);
 
 		&[for] {
 			cursor: pointer;
@@ -291,13 +291,13 @@ button {
 	@include flex-row;
 	align-items: center;
 	justify-content: center;
-	gap: $gap / 2;
+	gap: calc($gap / 2);
 
 	font-size: 16px;
 
 	font-weight: 600;
 
-	padding: $padding / 2 $padding;
+	padding: calc($padding / 2) $padding;
 
 	width: max-content;
 
@@ -308,7 +308,7 @@ button {
 	border-radius: $border-radius;
 
 	&:hover {
-		transform: translateY(-$padding / 8);
+		transform: translateY(calc(-$padding / 8));
 		border-color: $outline-color;
 	}
 
@@ -395,7 +395,7 @@ figure {
 		background-color: var(--body-color);
 		color: var(--body-bg);
 
-		padding: $gap / 2;
+		padding: calc($gap / 2);
 
 		font-weight: 600;
 
@@ -412,7 +412,7 @@ table {
 	th,
 	td {
 		border: $border;
-		padding: $gap / 2;
+		padding: calc($gap / 2);
 	}
 
 	tbody {
