@@ -174,7 +174,7 @@ nav {
 		list-style: none;
 		width: 100%;
 		@include flex-row;
-		gap: $gap / 2;
+		gap: calc($gap / 2);
 		justify-content: space-evenly;
 		flex-wrap: wrap;
 	}
