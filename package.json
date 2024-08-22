@@ -1,6 +1,6 @@
 {
 	"name": "flow.scss",
-	"version": "1.0.71",
+	"version": "1.0.72",
 	"description": "Tiny SCSS framework for flexbox based layout structuring.",
 	"main": "index.scss",
 	"directories": {
