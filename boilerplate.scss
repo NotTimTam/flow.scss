@@ -62,8 +62,9 @@ body {
 
 header,
 footer {
-	@include flex-column;
 	gap: calc($gap / 2);
+
+	@include flex-column;
 
 	ul,
 	ol {
@@ -81,15 +82,14 @@ footer {
 }
 
 section {
-	@include flex-column;
 	gap: $gap;
+	@include flex-column;
 }
 
 article {
-	@include flex-column;
 	gap: $gap;
-
 	padding: $padding;
+	@include flex-column;
 }
 
 /*
@@ -120,15 +120,16 @@ hr {
 ul,
 ol,
 dl {
-	@include flex-column;
 	gap: calc($gap / 4);
 	list-style: auto;
+
+	list-style-position: inside;
+
+	@include flex-column;
 
 	&:not(dl) {
 		margin-left: $margin;
 	}
-
-	list-style-position: inside;
 
 	li {
 		padding-left: $gap;
@@ -160,10 +161,11 @@ dl {
 
 // Navigation
 nav {
-	@include flex-row;
 	gap: calc($gap / 2);
 	justify-content: space-evenly;
 	flex-wrap: wrap;
+
+	@include flex-row;
 
 	ul,
 	ol,
@@ -182,12 +184,13 @@ nav {
 
 // Forms and Their Content
 form {
-	@include flex-column;
 	gap: $gap;
 
 	width: 100%;
 	max-width: $tablet;
 	margin: 0 auto;
+
+	@include flex-column;
 
 	div,
 	section {
@@ -195,13 +198,14 @@ form {
 	}
 
 	fieldset {
-		@include flex-column;
 		gap: $gap;
 		padding: $padding;
 
 		border-radius: $border-radius;
 
 		border: $border;
+
+		@include flex-column;
 	}
 
 	legend {
@@ -264,17 +268,17 @@ datalist,
 output,
 option,
 optgroup {
-	@include transition(border, $transition-speed-fast, ease-in-out);
-
 	font-size: 16px;
+
+	background: var(--body-bg);
+	color: var(--body-color);
+
+	@include transition(border, $transition-speed-fast, ease-in-out);
 
 	&[disabled] {
 		pointer-events: none;
 		// opacity: 0.9;
 	}
-
-	background: var(--body-bg);
-	color: var(--body-color);
 
 	&:focus,
 	&:active {
@@ -286,9 +290,6 @@ optgroup {
 input[type="submit"],
 input[type="button"],
 button {
-	@include transition(all, $transition-speed-fast, ease-in-out);
-
-	@include flex-row;
 	align-items: center;
 	justify-content: center;
 	gap: calc($gap / 2);
@@ -306,6 +307,9 @@ button {
 
 	border: $border;
 	border-radius: $border-radius;
+
+	@include transition(all, $transition-speed-fast, ease-in-out);
+	@include flex-row;
 
 	&:hover {
 		transform: translateY(calc(-#{$padding} / 8));
@@ -377,8 +381,6 @@ progress {
 
 // Figcaption
 figure {
-	@include flex-column;
-
 	border: $border;
 	border-radius: $border-radius;
 
@@ -386,6 +388,8 @@ figure {
 
 	max-width: $tablet;
 	margin: 0 auto;
+
+	@include flex-column;
 
 	img {
 		width: 100%;
