@@ -26,6 +26,6 @@
 	},
 	"homepage": "https://github.com/NotTimTam/flow.scss#readme",
 	"dependencies": {
-		"sass": "^1.77.8"
+		"sass": "^1.84.0"
 	}
 }
